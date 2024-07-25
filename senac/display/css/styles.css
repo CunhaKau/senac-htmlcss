@@ -1,0 +1,119 @@
+/* Display: Bloco embutido */
+
+.inline_block {
+    width: 300px;
+    height: 300px;
+    background-color: #754;
+    font-size: xx-large;
+    margin: 15px;
+    color: white;
+    display: inline-block;
+}
+
+.block {
+    background-color: darkmagenta;
+    font-size: xx-large;
+    color: white;
+    margin: 10px;
+    display: block;
+}
+
+/* Escondendo o elemento */
+.escondendo {
+    display: none;
+}
+
+/* Posição Estátiva - segue o fluxo do html, static não é afetado por top, left, right, bottom. Estátivo não muda */
+.static {
+    position: static;
+    background-color: #748;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+}
+
+/* Posição Relativa */
+.relative {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    color: white;
+    top: 50px;
+    left: 50px;
+}
+
+/* Posiççao Absoluta */
+.absolute {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #785;
+    color: white;
+    /* Top e Left = nesse caso coloca o elemento no topo da página pois o Absolute é em relação a página do navegador */
+    top: 2px;
+    left: 2px;
+}
+
+/* Posição Relativa  com Absolute */
+.bloco_relativo {
+    width: 250px;
+    height: 250px;
+    border: 2px solid blue;
+    margin-top: 100px;
+    position: relative;
+}
+
+.bloco_absoluto_1, .bloco_absoluto_2 {
+    width: 70px;
+    height: 70px;
+    background-color: brown;
+    position: absolute;
+}
+
+/* Erro - resolver com Relative */
+.bloco_absoluto_1 {
+    top: 5px;
+    left: 5px;
+}
+
+.bloco_absoluto_2 {
+    bottom: 5px;
+    right: 5px;
+}
+
+/* Posição Sticky*/
+.sticky {
+    width: 150px;
+    height: 150px;
+    background-color: firebrick;
+    color: aliceblue;
+    border: 2px solid black;
+    position: sticky;
+    top: 10px;
+}
+
+/* Z-Index: aproveitando o style anterior do Blobo Relativo da Posição Pelativa vom Absoluta*/
+.bloco_absoluto_3, .bloco_absoluto_4, .bloco_absoluto_5 {
+    width: 60px;
+    height: 60px;
+    background-color: coral;
+    position: absolute;
+}
+
+.bloco_absoluto_3 {
+    top: 0px;
+    left: 0px;
+}
+
+.bloco_absoluto_4 {
+    top: 15px;
+    left: 15px;
+    background-color: darkgreen;
+}
+
+.bloco_absoluto_5 {
+    top: 30px;
+    left: 30px;
+    background-color: lightseagreen;
+}
