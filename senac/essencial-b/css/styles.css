@@ -262,6 +262,19 @@ width: 400px;
     margin: 7px 10px 9px 30px;
 }
 
+/* Box Model Juntos */
+.box-model{
+    background-color: aqua;
+    color: #000;
+    width: 200px;
+    height: 200px;
+    padding: 10px 10px 15px 25px;
+    border: 5px solid violet;
+    border-radius: 10px;
+    margin: auto;
+}
+
+
 /* Alinhamento de Texto */
 .alinhamento-direita{
     text-align: right;
