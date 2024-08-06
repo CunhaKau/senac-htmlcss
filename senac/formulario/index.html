@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <!-- Atributo Action -->
+    <h1> Formulário </h1>
+    <form action="registro.php" method="GET">
+       <div>
+            <label>Nome:</label>
+            <input type="text" />
+        </div>  
+      
+    <!-- Atributo Name -->
+        <div>
+            <label>Idade:</label>
+            <input type="text" name="age" />
+        </div>
+
+    <!-- Atributo Label -->
+     <div>
+        <label for="age">Idade:</label>
+        <input type="text" name="age" />
+     </div>
+
+     <!-- Limpando/Resetando o formulário -->
+     <input type="reset" value="Limpar" />
+
+     <!-- Submit botão -->
+     <input type="submit" value="Enviar" />
+
+     <!-- Select -->
+      <div>
+        <label for="cidade">Selecione sua cidade:</label>
+        <select name="cidade">
+        <option value="São Paulo">São Paulo</option>
+        <option value="Taboão da Serra">Taboão da Serra</option>
+        <option value="Osasco">Osasco</option>
+        </select>
+      </div>
+
+      <!-- Selected -->
+       <div>
+        <label for="selecao">Quem vai ganhar a próxima Copa do Mundo?</label>
+            <select name="times">
+                <option value ="Argentina">Argentina</option>
+                <option value ="Franca" selected>França</option>
+                <option value ="Alemanha">Alemanha</option>
+                <option value ="Brasil">Brasil</option>
+            </select>
+       </div>
+
+       <!-- Seleção de vários select -->
+        <div>
+            <label for="acessorios">Selecione os acessórios do seu computador:</label>
+                <select name="acessorios" multiple>
+                    <option value="mouse">Mouse</option>
+                    <option value="teclado">Teclado</option>
+                    <option value="fone-de-ouvido">Fone de Ouvido</option>
+                    <option value="webcam">Webcam</option>
+                </select>
+        </div>
+
+        <!-- Textarea -->
+         <div>
+            <label for="feedback">Descreva o seu feedback sobre o nosso site:</label>
+            <textarea name="feedback"></textarea>
+         </div>
+
+         <!-- Fieldset -->
+          <div>
+            <fieldset>
+                <legend>Insira o seu endereço:</legend>
+                <label for="rua">Rua:</label>
+                <input type="text" name="rua">
+                <label for="bairro">Bairro:</label>
+                <input type="text" name="bairro">
+            </fieldset>
+          </div>
+
+          <!-- Datalist -->
+           <div>
+            <label for="livro">Selecione seu livro:</label>
+            <input type="text" list="livros" name="livro">
+            
+            <datalist id="livros">
+                <option value="Crepúsculo"></option>
+                <option value="Harry Potter e a Pedra Filosofal"></option>
+                <option value="A Hospedeira"></option>
+                <option value="Harry Potter e o Cálice de Fogo"></option>
+            </datalist>
+
+           </div>
+
+           <!-- Password / Senha -->
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha">
+            </div>
+
+            <!-- Input Radio -->
+             <div>
+                <label for="genero">Qual o seu gênero:</label>
+                <div class="radio">
+                    <input type="radio" value="Feminino" name="genero">
+                    <label for="Feminino">Feminino</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" value="Masculino" name="genero">
+                    <label for="Masculina">Masculino</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" value="NaoBinario" name="genero">
+                    <label for="NaoBinario">Não Binário</label>
+                </div>
+             </div>
+
+<!-- Input Checkbox -->
+<div>
+    <label for="linguasestrangeiras"> Quais linguas que você pretende estudar:</label>
+</div>
+<div class="radio">
+    <input type="checkbox" name="linguasestrangeiras" value="ingles">
+    <label for="ingles">Inglês</label>
+</div>
+            
+<div class="radio">
+    <input type="checkbox" name="linguasestrangeiras" value="espanhol">
+    <label for="espanhol">Espanhol</label>
+</div>
+
+<div class="radio">
+    <input type="checkbox" name="linguasestrangeiras" value="alemao">
+    <label for="alemao">Alemão</label>
+</div>
+
+<!-- Input Data -->
+ <div>
+    <label for="datadenascimento">Data de Nascimento</label>
+    <input type="date" name="datadenascimento">
+ </div>
+
+  <!-- Input File -->
+    <div>
+        <label for="arquivo">Insira o seu currículo em PDF</label>
+        <input type="file" name="arquivo">
+    </div>
+
+<!-- Input Number -->
+ <div>
+    <label for="certificados">Quantos certificados você possui?</label>
+    <input type="number" name="certificados">
+ </div>
+
+<!-- Input Email -->
+<div>
+    <label for="emailinserido">Insira o seu e-mail:</label>
+    <input type="email" name="emailinserido">
+</div>
+
+<!-- Atributo Value -->
+ <div>
+    <label for="confirmaraula">Você assistiu a vídeo aula de treinamento da empresa?</label>
+    <input type="text" value="Confirmo que assisti!" name="confirmaraula">
+ </div>
+
+ <!-- Atributo Disabled -->
+  <div>
+    <p>Informe seu RG:</p>
+    <input type="text" value="Não precisa preencher esse campo" disabled>
+  </div>
+
+  <!-- Atributo Placeholder -->
+   <div>
+    <label for="pesquisa"> Como achou o nosso site?</label>
+    <input type="text" name="pesquisa" placeholder="No Google ou Instagram">
+   </div>
+
+   <!-- Atributo Required -->
+    <div>
+        <input type="text" name="sobrenome" placeholder="Sobrenome Completo" required>
+    </div>
+
+    </form>
+   
+
+</body>
+</html>
